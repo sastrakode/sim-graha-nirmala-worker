@@ -9,5 +9,3 @@ type House struct {
 	Address       string `bun:"address"`
 	BaseTimestamps
 }
-
-var HouseMode = (*House)(nil)
