@@ -14,8 +14,6 @@ type Occupant struct {
 	BaseTimestamps
 }
 
-var OccupantMode = (*Occupant)(nil)
-
 type OccupantRole string
 
 const (

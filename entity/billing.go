@@ -16,5 +16,3 @@ type Billing struct {
 	ExtraCharge   int64     `bun:"extra_charge"`
 	BaseTimestamps
 }
-
-var BillingModel = (*Billing)(nil)
