@@ -37,3 +37,4 @@ jobs:
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /opt/sastrakode/sim-graha-nirmala/dev && docker compose down worker"
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /opt/sastrakode/sim-graha-nirmala/dev && docker compose pull worker"
           ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "cd /opt/sastrakode/sim-graha-nirmala/dev && docker compose up -d worker"
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }} "docker system prune -af"
