@@ -30,7 +30,7 @@ jobs:
         uses: docker/build-push-action@v5
         with:
           push: true
-          tags: ${{ secrets.DOCKERHUB_USERNAME }}/sim-graha-nirmala-web:dev
+          tags: ${{ secrets.DOCKERHUB_USERNAME }}/sim-graha-nirmala-worker:dev
 
       - name: Deploy
         run: |
